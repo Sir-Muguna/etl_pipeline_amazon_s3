@@ -79,7 +79,7 @@ def transform_load_data(task_instance, **kwargs):
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2024, 3, 5),  # Fixed past date to avoid Airflow issues
+    'start_date': datetime(2024, 3, 5), 
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 2,
