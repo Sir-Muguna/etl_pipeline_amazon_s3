@@ -7,7 +7,7 @@ This Apache Airflow DAG (`weather_dag`) automates the process of extracting weat
 - **Extraction**: Fetches weather data for Kansas from OpenWeatherMap API.
 - **Transformation**: Converts temperature from Kelvin to Fahrenheit and structures the data.
 - **Loading**: Saves the processed data as a CSV file locally and then uploads it to an Amazon S3 bucket.
-
+![MetaData](include/images/s3.png)
 ---
 
 ## **DAG Workflow**
@@ -39,7 +39,7 @@ WEATHER_API_KEY=your-openweathermap-api-key
 ### **2. Connections**
 - **OpenWeatherMap API Connection**: Set up an **HTTP Connection** in Airflow (`weathermap_api`).
 - **AWS Connection**: Set up an **AWS Connection** in Airflow (`aws_default`).
-
+`   1
 ### **3. Required Python Libraries**
 Ensure the following Python packages are installed in your Airflow environment:
 ```bash
